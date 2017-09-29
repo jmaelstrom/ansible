@@ -7,7 +7,7 @@ fi
 
 # Generate temporary SSH key to allow access to the host machine.
 mkdir -p /root/.ssh
-ssh-keygen -f /root/.ssh/id_rsa -P ""
+ssh-keygen -f /root/.ssh/id_rsa -P "" > /dev/null
 
 OWNER=$(stat -c %u /tmp/hostssh/authorized_keys)
 
